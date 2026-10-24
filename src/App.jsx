@@ -12,7 +12,10 @@ const FEATURES = [
   { icon: '🧾', name: 'Billing & Invoicing', copy: 'Subscriptions, invoices and payment status in one place.' },
   { icon: '🔐', name: 'Document Vault', copy: 'Store contracts and files with controlled access.' },
   { icon: '🛡️', name: 'Security & Roles', copy: 'Per-member permissions. Owners control who sees what.' },
+  { icon: 'CRM', name: 'CRM & Pipeline', copy: 'Contacts and a drag-and-drop deal pipeline with custom stages.' },
   { icon: '👥', name: 'Member Management', copy: 'Invite your team, set roles, manage modules per person.' },
+  { icon: 'API', name: 'Developer API', copy: 'API keys, signed webhooks and an MCP server for AI assistants.' },
+  { icon: 'Admin', name: 'Admin Console', copy: 'Manage workspaces, members, users and content without code.' },
   { icon: '🏠', name: 'Property Management', copy: 'Track units, tenants and records for small portfolios.' },
 ]
 
@@ -222,6 +225,7 @@ function App() {
                     <span>Security</span>
                     <span>Members</span>
                     <span>Properties</span>
+                    <span>CRM</span>
                   </nav>
                   <div className="shot-row space">
                     <h2>Acme Builders</h2>
@@ -293,7 +297,7 @@ function App() {
         <section className="stats" id="product">
           <div className="container stats-grid">
             <div className="stat" data-reveal>
-              <CountUp to={10} />
+              <CountUp to={11} />
               <p>modules in one platform</p>
             </div>
             <div className="stat" data-reveal style={{ transitionDelay: '80ms' }}>
@@ -349,7 +353,7 @@ function App() {
                   <span className="cost-plan">Synthematic Micro — every module included</span>
                   <strong>₱499/mo</strong>
                 </div>
-                <span className="save-pill">10-in-1 platform</span>
+                <span className="save-pill">11-in-1 platform</span>
               </div>
             </div>
           </div>
@@ -360,7 +364,7 @@ function App() {
           <div className="container">
             <div className="section-head" data-reveal>
               <p className="eyebrow">Everything included</p>
-              <h2>Ten tools. One login.</h2>
+              <h2>Eleven tools. One login.</h2>
               <p className="section-sub">
                 Every plan includes every feature. No modules to unlock, no per-seat surprises.
               </p>
