@@ -4,19 +4,19 @@ import './App.css'
 const APP_URL = 'https://prod.synthematic.app'
 
 const FEATURES = [
-  { icon: '📅', name: 'Calendar', copy: 'Schedules, events and team availability in one shared view.' },
-  { icon: '✅', name: 'Tasks & Projects', copy: 'Assign work, set deadlines, track progress to done.' },
-  { icon: '🗂️', name: 'Kanban Boards', copy: 'Visual pipelines with drag-and-drop and task codes.' },
-  { icon: '💬', name: 'Chat & DMs', copy: 'Team chat, direct messages and @mentions — no extra app.' },
-  { icon: '⏱️', name: 'Time Tracking', copy: 'Clock in/out, live presence and accurate timesheets.' },
-  { icon: '🧾', name: 'Billing & Invoicing', copy: 'Subscriptions, invoices and payment status in one place.' },
-  { icon: '🔐', name: 'Document Vault', copy: 'Store contracts and files with controlled access.' },
-  { icon: '🛡️', name: 'Security & Roles', copy: 'Per-member permissions. Owners control who sees what.' },
-  { icon: 'CRM', name: 'CRM & Pipeline', copy: 'Contacts and a drag-and-drop deal pipeline with custom stages.' },
-  { icon: '👥', name: 'Member Management', copy: 'Invite your team, set roles, manage modules per person.' },
-  { icon: 'API', name: 'Developer API', copy: 'API keys, signed webhooks and an MCP server for AI assistants.' },
-  { icon: 'Admin', name: 'Admin Console', copy: 'Manage workspaces, members, users and content without code.' },
-  { icon: '🏠', name: 'Property Management', copy: 'Track units, tenants and records for small portfolios.' },
+  { name: 'Calendar', copy: 'Schedules, events and team availability in one shared view.' },
+  { name: 'Tasks & Projects', copy: 'Assign work, set deadlines, track progress to done.' },
+  { name: 'Kanban Boards', copy: 'Visual pipelines with drag-and-drop and task codes.' },
+  { name: 'Chat & DMs', copy: 'Team chat, direct messages and @mentions — no extra app.' },
+  { name: 'Time Tracking', copy: 'Clock in/out, live presence and accurate timesheets.' },
+  { name: 'Billing & Invoicing', copy: 'Subscriptions, invoices and payment status in one place.' },
+  { name: 'Document Vault', copy: 'Store contracts and files with controlled access.' },
+  { name: 'Security & Roles', copy: 'Per-member permissions. Owners control who sees what.' },
+  { name: 'CRM & Pipeline', copy: 'Contacts and a drag-and-drop deal pipeline with custom stages.' },
+  { name: 'Member Management', copy: 'Invite your team, set roles, manage modules per person.' },
+  { name: 'Developer API', copy: 'API keys, signed webhooks and an MCP server for AI assistants.' },
+  { name: 'Admin Console', copy: 'Manage workspaces, members, users and content without code.' },
+  { name: 'Property Management', copy: 'Track units, tenants and records for small portfolios.' },
 ]
 
 const CATEGORIES = [
@@ -377,9 +377,6 @@ function App() {
                   data-reveal
                   style={{ transitionDelay: `${(i % 5) * 60}ms` }}
                 >
-                  <span className="feature-icon" aria-hidden="true">
-                    {f.icon}
-                  </span>
                   <h3>{f.name}</h3>
                   <p>{f.copy}</p>
                 </div>

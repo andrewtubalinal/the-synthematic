@@ -669,12 +669,6 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 0 24px rgba(0, 255, 238, 0.07);
 }
 
-.feature-icon {
-  font-size: 26px;
-  display: block;
-  margin-bottom: 14px;
-}
-
 .feature h3 {
   font-size: 16px;
   margin-bottom: 8px;
